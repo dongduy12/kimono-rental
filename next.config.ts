@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Provide an explicit Turbopack config to silence warnings when running `next dev`.
+  turbopack: {},
   webpack(config, { dev }) {
     if (dev) {
       config.devtool = false;
