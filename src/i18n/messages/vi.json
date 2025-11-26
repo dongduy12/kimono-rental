@@ -1,0 +1,192 @@
+{
+  "seo": {
+    "title": "Thuê Kimono & Chụp Ảnh Tại Kyoto | An Nhien Kimono Kyoto",
+    "description": "Dịch vụ thuê kimono, làm tóc, make up và chụp ảnh ngoại cảnh quanh Gion, Yasaka, Kiyomizu-dera. Phong cách Nhật Bản thanh lịch, trải nghiệm chuẩn Kyoto.",
+    "keywords": "thuê kimono kyoto, chụp ảnh gion, kimono kyoto",
+    "openGraphTitle": "An Nhien Kimono Kyoto",
+    "openGraphDescription": "Thuê kimono, làm tóc, make up và chụp ảnh ngoại cảnh tại Kyoto.",
+    "openGraphImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+  },
+  "navbar": {
+    "brand": "An Nhien Kimono Kyoto",
+    "menu": {
+      "services": "Dịch vụ",
+      "pricing": "Bảng giá",
+      "gallery": "Bộ sưu tập",
+      "reviews": "Đánh giá",
+      "faq": "FAQ",
+      "booking": "Booking"
+    },
+    "languages": {
+      "vi": "VI",
+      "en": "EN",
+      "ja": "JA"
+    }
+  },
+  "hero": {
+    "title": "Thuê Kimono & Chụp Ảnh Tại Kyoto",
+    "subtitle": "Trải nghiệm khoảnh khắc Kyoto tinh tế với kimono cao cấp, đội ngũ stylist tận tâm và nhiếp ảnh gia bản địa.",
+    "primaryCta": "Đặt lịch ngay",
+    "secondaryCta": "Xem bảng giá",
+    "badge": "Kyoto | Gion · Yasaka · Kiyomizu-dera",
+    "highlights": [
+      {
+        "title": "Gion",
+        "description": "Ngõ nhỏ cổ kính"
+      },
+      {
+        "title": "Yasaka",
+        "description": "Ánh sáng chùa tháp"
+      },
+      {
+        "title": "Kiyomizu",
+        "description": "Làn gió trên đồi"
+      }
+    ],
+    "imageAlt": "Khoảnh khắc kimono pastel tại Kyoto"
+  },
+  "services": {
+    "title": "Dịch vụ nổi bật",
+    "items": [
+      {
+        "name": "Thuê kimono",
+        "description": "Hơn 80 mẫu kimono, obi và phụ kiện được chăm sóc kỹ lưỡng, vừa vặn cho mọi dáng người."
+      },
+      {
+        "name": "Làm tóc & make up",
+        "description": "Stylist chuyên nghiệp tạo kiểu tóc truyền thống, make up nhẹ nhàng, tôn lên vẻ thanh lịch."
+      },
+      {
+        "name": "Chụp ảnh ngoại cảnh",
+        "description": "Gói chụp quanh Gion, Yasaka, Kiyomizu-dera với nhiếp ảnh gia hiểu từng góc Kyoto."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Bảng giá",
+    "note": "Giữ lịch linh hoạt, miễn phí đổi giờ trước 24h.",
+    "cards": [
+      {
+        "name": "Gói Basic",
+        "price": "$69",
+        "features": [
+          "1 bộ kimono + phụ kiện",
+          "Stylist hỗ trợ mặc",
+          "Giữ đồ trong 4 giờ"
+        ]
+      },
+      {
+        "name": "Gói Couple",
+        "price": "$129",
+        "features": [
+          "2 bộ kimono đồng điệu",
+          "Tư vấn phối màu cặp đôi",
+          "Phụ kiện tóc & quạt tay"
+        ]
+      },
+      {
+        "name": "Gói Photoshoot (outdoor)",
+        "price": "$199",
+        "features": [
+          "Trang phục + stylist",
+          "1 giờ chụp tại Gion/Yasaka",
+          "30 ảnh chỉnh màu, giao nhanh"
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Bộ sưu tập",
+    "subtitle": "Gam màu pastel, nhẹ nhàng chuẩn Kyoto.",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Cặp đôi mặc kimono tại Gion"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=800&q=80",
+        "alt": "Thiếu nữ kimono bên phố cổ"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono pastel cùng ô wagasa"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "Khoảnh khắc bên đền Yasaka"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Đánh giá",
+    "items": [
+      {
+        "name": "Lan Anh",
+        "role": "Hà Nội",
+        "content": "Kimono rất mới, bạn stylist cực kỳ dễ thương và hiểu dáng người. Mình có bộ ảnh Kyoto để đời!"
+      },
+      {
+        "name": "Michael",
+        "role": "Singapore",
+        "content": "Professional team, smooth booking, and the photographer knew the best hidden alleys for photos."
+      },
+      {
+        "name": "Yui",
+        "role": "Osaka",
+        "content": "着付けが丁寧で、ヘアセットも可愛い。清水寺周辺の撮影が最高でした。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "question": "Mất bao lâu để mặc kimono và làm tóc?",
+        "answer": "Khoảng 30–40 phút cho mặc kimono và 20 phút cho làm tóc/make up cơ bản."
+      },
+      {
+        "question": "Có hỗ trợ giữ đồ cá nhân không?",
+        "answer": "Có, chúng tôi có tủ khóa riêng cho khách trong thời gian sử dụng dịch vụ."
+      },
+      {
+        "question": "Nếu trời mưa có thể dời lịch?",
+        "answer": "Bạn có thể đổi giờ hoặc dời sang ngày khác miễn phí trước 24h hoặc tùy tình trạng."
+      },
+      {
+        "question": "Có size lớn không?",
+        "answer": "Chúng tôi có đủ size cho người cao đến 185cm và size plus. Vui lòng ghi chú khi đặt."
+      },
+      {
+        "question": "Chụp ảnh xong có thể giữ kimono lâu hơn không?",
+        "answer": "Bạn có thể chọn gói gia hạn thêm giờ với chi phí nhỏ, vui lòng hỏi nhân viên."
+      },
+      {
+        "question": "Thanh toán như thế nào?",
+        "answer": "Chấp nhận thẻ quốc tế, tiền mặt và các ví điện tử phổ biến tại Nhật."
+      }
+    ]
+  },
+  "booking": {
+    "title": "Booking",
+    "subtitle": "Hẹn giờ linh hoạt, đội ngũ hỗ trợ đa ngôn ngữ.",
+    "form": {
+      "name": "Họ tên",
+      "email": "Email",
+      "date": "Ngày",
+      "people": "Số người",
+      "package": "Gói dịch vụ",
+      "note": "Ghi chú thêm",
+      "submit": "Gửi yêu cầu"
+    }
+  },
+  "footer": {
+    "address": "165 Shijo-dori, Higashiyama-ku, Kyoto",
+    "hours": "Mở cửa: 08:00 - 19:00 hằng ngày",
+    "contact": "Hotline: +81 90 1234 5678",
+    "social": "Kết nối",
+    "socialLinks": [
+      "Instagram",
+      "Facebook"
+    ]
+  }
+}

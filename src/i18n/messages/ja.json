@@ -1,0 +1,192 @@
+{
+  "seo": {
+    "title": "京都で着物レンタル＆写真撮影 | An Nhien Kimono Kyoto",
+    "description": "祇園・八坂・清水寺周辺での着物レンタル、ヘアセット、メイク、ロケーション撮影までワンストップでサポート。",
+    "keywords": "京都 着物 レンタル, 祇園 撮影, 着物 フォト",
+    "openGraphTitle": "An Nhien Kimono Kyoto",
+    "openGraphDescription": "京都の穏やかな光で、パステルカラーの着物体験を。",
+    "openGraphImage": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=80"
+  },
+  "navbar": {
+    "brand": "An Nhien Kimono Kyoto",
+    "menu": {
+      "services": "サービス",
+      "pricing": "料金",
+      "gallery": "ギャラリー",
+      "reviews": "レビュー",
+      "faq": "FAQ",
+      "booking": "予約"
+    },
+    "languages": {
+      "vi": "VI",
+      "en": "EN",
+      "ja": "JA"
+    }
+  },
+  "hero": {
+    "title": "京都で着物レンタル＆写真撮影",
+    "subtitle": "上質な着物と繊細なスタイリング、京都を知り尽くしたカメラマンが特別な一日を演出します。",
+    "primaryCta": "予約する",
+    "secondaryCta": "料金を見る",
+    "badge": "京都｜祇園・八坂・清水寺",
+    "highlights": [
+      {
+        "title": "祇園",
+        "description": "石畳の路地"
+      },
+      {
+        "title": "八坂",
+        "description": "塔と光"
+      },
+      {
+        "title": "清水寺",
+        "description": "山の風"
+      }
+    ],
+    "imageAlt": "京都でのパステル着物シーン"
+  },
+  "services": {
+    "title": "おすすめサービス",
+    "items": [
+      {
+        "name": "着物レンタル",
+        "description": "80着以上の着物と帯、小物を常にメンテナンス。体型に合わせて綺麗に着付けします。"
+      },
+      {
+        "name": "ヘアセット＆メイク",
+        "description": "京都の色彩を生かしたナチュラルなヘアメイクで、凛とした雰囲気に。"
+      },
+      {
+        "name": "ロケーション撮影",
+        "description": "祇園・八坂・清水寺周辺を巡りながら、ベストスポットで撮影。"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "料金プラン",
+    "note": "24時間前までなら無料で日時変更が可能です。",
+    "cards": [
+      {
+        "name": "ベーシック",
+        "price": "¥10,800",
+        "features": [
+          "着物一式＋小物",
+          "着付けサポート",
+          "4時間レンタル"
+        ]
+      },
+      {
+        "name": "カップル",
+        "price": "¥19,800",
+        "features": [
+          "2名分のコーディネート",
+          "色合わせアドバイス",
+          "髪飾り＆扇子"
+        ]
+      },
+      {
+        "name": "ロケ撮影プラン",
+        "price": "¥29,800",
+        "features": [
+          "着物＋スタイリスト",
+          "祇園/八坂で1時間撮影",
+          "色味調整済みデータ30枚"
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "title": "ギャラリー",
+    "subtitle": "淡い色合いで京都らしい静けさを表現。",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "和傘と着物のスタイリング"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "着物のカップル"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=800&q=80",
+        "alt": "祇園の街並みでのポートレート"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "八坂神社近くを歩く姿"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "レビュー",
+    "items": [
+      {
+        "name": "Miki",
+        "role": "福岡",
+        "content": "着物の質感が柔らかく、スタッフさんがとても丁寧。家族写真も素敵に仕上がりました。"
+      },
+      {
+        "name": "Sophie",
+        "role": "Paris",
+        "content": "Calm team, beautiful colors, and the photographer caught every candid smile."
+      },
+      {
+        "name": "Ken",
+        "role": "Nagoya",
+        "content": "雨予報でしたがスムーズに日程変更できて助かりました。ロケーションも最高。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "items": [
+      {
+        "question": "着付けとヘアセットはどのくらい時間がかかりますか？",
+        "answer": "着付け30〜40分、ヘア・メイク20分ほどを目安にしてください。"
+      },
+      {
+        "question": "荷物を預けられますか？",
+        "answer": "ご利用中は専用ロッカーにお預けいただけます。"
+      },
+      {
+        "question": "雨の場合はどうなりますか？",
+        "answer": "24時間前までのご連絡で無料変更が可能です（空き状況によります）。"
+      },
+      {
+        "question": "大きいサイズはありますか？",
+        "answer": "身長185cm程度まで対応するサイズとプラスサイズをご用意しています。予約時にお知らせください。"
+      },
+      {
+        "question": "撮影後に延長できますか？",
+        "answer": "追加料金で延長プランをご利用いただけます。スタッフにご相談ください。"
+      },
+      {
+        "question": "支払い方法は？",
+        "answer": "主要クレジットカード、現金、日本の電子マネーに対応しています。"
+      }
+    ]
+  },
+  "booking": {
+    "title": "予約",
+    "subtitle": "多言語対応でスムーズにご案内します。",
+    "form": {
+      "name": "お名前",
+      "email": "メール",
+      "date": "日付",
+      "people": "人数",
+      "package": "プラン",
+      "note": "備考",
+      "submit": "送信"
+    }
+  },
+  "footer": {
+    "address": "京都市東山区四条通165",
+    "hours": "営業時間: 08:00 - 19:00 (毎日)",
+    "contact": "ホットライン: +81 90 1234 5678",
+    "social": "SNS",
+    "socialLinks": [
+      "インスタグラム",
+      "フェイスブック"
+    ]
+  }
+}
