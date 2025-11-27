@@ -155,18 +155,115 @@ export default function LocalePage({ params }: PageProps) {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-sakura-100 via-white to-mizu-100 rounded-[32px] blur-2xl" aria-hidden />
-              <div className="relative rounded-[28px] border border-white/70 shadow-soft overflow-hidden bg-white/80 backdrop-blur">
-                <div className="relative aspect-[4/5] md:aspect-[5/4]">
-                  <Image
-                    src="https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=80"
-                    alt={messages.hero.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 1024px) 560px, 100vw"
-                    priority
-                  />
-                </div>
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                {messages.hero.collage.map((image) => (
+                  <div
+                    key={image.src}
+                    className="relative overflow-hidden rounded-[22px] border border-white/70 shadow-soft bg-white/70"
+                  >
+                    <div className="relative aspect-[4/5] md:aspect-[5/6]">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(min-width: 1024px) 260px, 50vw"
+                        priority
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 md:py-16 bg-white/80">
+          <div className="mx-auto max-w-6xl px-6 space-y-6">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="space-y-2">
+                <p className="text-sm font-semibold uppercase tracking-wide text-sakura-700">
+                  {messages.showcase.kicker}
+                </p>
+                <h2 className="text-3xl md:text-4xl font-display text-slate-900">
+                  {messages.showcase.title}
+                </h2>
+                <p className="text-slate-600 max-w-3xl">{messages.showcase.subtitle}</p>
+              </div>
+              <a
+                href="#gallery"
+                className="inline-flex items-center gap-2 rounded-full border border-sakura-200 bg-white/70 px-4 py-2 text-sakura-700 font-semibold hover:border-sakura-500 hover:text-sakura-800"
+              >
+                {messages.showcase.cta}
+              </a>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+              {messages.showcase.images.map((image, index) => (
+                <div
+                  key={`${image.src}-${index}`}
+                  className="relative overflow-hidden rounded-3xl border border-white/70 shadow-soft bg-white/70"
+                >
+                  <div className="relative aspect-[4/5] md:aspect-[5/6]">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform"
+                      sizes="(min-width: 1024px) 280px, 48vw"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-10 md:py-14">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="rounded-[28px] border border-sakura-100 bg-gradient-to-r from-sakura-50 via-white to-mizu-50 shadow-soft p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="space-y-3 text-center md:text-left">
+                <p className="text-sm font-semibold uppercase tracking-wide text-sakura-700">
+                  {messages.banner.kicker}
+                </p>
+                <h3 className="text-2xl md:text-3xl font-display text-slate-900">
+                  {messages.banner.title}
+                </h3>
+                <p className="text-slate-700 max-w-2xl">{messages.banner.subtitle}</p>
+              </div>
+              <a
+                href="#booking"
+                className="inline-flex items-center gap-2 rounded-full bg-sakura-500 px-6 py-3 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
+              >
+                {messages.banner.cta}
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 md:py-20 bg-white/70">
+          <div className="mx-auto max-w-6xl px-6 space-y-10">
+            <SectionHeading title={messages.reasons.title} subtitle={messages.reasons.subtitle} />
+            <div className="grid md:grid-cols-3 gap-6">
+              {messages.reasons.items.map((reason) => (
+                <div
+                  key={reason.title}
+                  className="rounded-3xl border border-slate-100 bg-white/80 shadow-soft overflow-hidden flex flex-col"
+                >
+                  <div className="relative aspect-[4/3]">
+                    <Image
+                      src={reason.image}
+                      alt={reason.title}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 1024px) 360px, 100vw"
+                    />
+                  </div>
+                  <div className="p-6 space-y-2 flex-1">
+                    <h3 className="text-xl font-display text-slate-900">{reason.title}</h3>
+                    <p className="text-slate-600 leading-relaxed">{reason.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

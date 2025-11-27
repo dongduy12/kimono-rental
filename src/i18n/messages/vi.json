@@ -29,6 +29,24 @@
     "primaryCta": "Đặt lịch ngay",
     "secondaryCta": "Xem bảng giá",
     "badge": "Kyoto | Gion · Yasaka · Kiyomizu-dera",
+    "collage": [
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=900&q=80",
+        "alt": "Chân dung kimono ở Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80",
+        "alt": "Cặp đôi mặc kimono pastel"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=900&q=80",
+        "alt": "Cô gái với ô giấy"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+        "alt": "Góc phố yên tĩnh ở Kyoto"
+      }
+    ],
     "highlights": [
       {
         "title": "Gion",
@@ -44,6 +62,73 @@
       }
     ],
     "imageAlt": "Khoảnh khắc kimono pastel tại Kyoto"
+  },
+  "showcase": {
+    "kicker": "Bộ sưu tập kimono",
+    "title": "Trưng bày mẫu mới",
+    "subtitle": "Các set kimono pastel được phối sẵn cho ánh sáng Kyoto – xem trước mẫu mới trước khi đến.",
+    "cta": "Xem toàn bộ gallery",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1504624720567-64a41aa25d70?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono pastel phối obi"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono với ô giấy"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Cặp đôi mặc kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+        "alt": "Không gian cửa hàng kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "Con phố Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Chi tiết obi"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "Chân dung kimono pastel"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?auto=format&fit=crop&w=800&q=80",
+        "alt": "Phụ kiện tóc"
+      }
+    ]
+  },
+  "banner": {
+    "kicker": "Nhận lịch trong ngày",
+    "title": "Đặt kimono Kyoto chỉ trong vài phút",
+    "subtitle": "Đội ngũ hỗ trợ đa ngôn ngữ, xác nhận nhanh, set kimono chuẩn bị sẵn khi bạn đến.",
+    "cta": "Đặt ngay"
+  },
+  "reasons": {
+    "title": "Lý do khách yêu thích An Nhien Kimono Kyoto",
+    "subtitle": "Styling tinh tế, đặt lịch nhẹ nhàng, vị trí gần các điểm tham quan.",
+    "items": [
+      {
+        "title": "Tủ đồ curated",
+        "description": "Kimono pastel theo mùa, hấp mỗi ngày cùng obi, geta và phụ kiện tóc ton-sur-ton.",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Stylist & photographer",
+        "description": "Trang điểm nhẹ, tóc mềm mại và photographer rành từng góc Kyoto để dẫn bạn chụp.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Gần Gion & trạm tàu",
+        "description": "Đi bộ đến Yasaka, Kiyomizu-dera và các trạm tàu – không cần di chuyển xa.",
+        "image": "https://images.unsplash.com/photo-1427308341325-2f0d2529b235?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
   },
   "services": {
     "title": "Dịch vụ nổi bật",

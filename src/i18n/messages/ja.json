@@ -29,6 +29,24 @@
     "primaryCta": "予約する",
     "secondaryCta": "料金を見る",
     "badge": "京都｜祇園・八坂・清水寺",
+    "collage": [
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=900&q=80",
+        "alt": "京都での着物ポートレート"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80",
+        "alt": "パステル着物のカップル"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=900&q=80",
+        "alt": "和傘を持つ女性"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+        "alt": "静かな京都の路地"
+      }
+    ],
     "highlights": [
       {
         "title": "祇園",
@@ -44,6 +62,73 @@
       }
     ],
     "imageAlt": "京都でのパステル着物シーン"
+  },
+  "showcase": {
+    "kicker": "Kimono display",
+    "title": "新作コレクション",
+    "subtitle": "京都の光に映えるパステル着物を先取り。ご来店前に最新コーデをチェック。",
+    "cta": "ギャラリーを見る",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1504624720567-64a41aa25d70?auto=format&fit=crop&w=800&q=80",
+        "alt": "帯と合わせたパステル着物"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=800&q=80",
+        "alt": "和傘と着物"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "着物のカップル"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+        "alt": "着物ショップの店内"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "京都の街角"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+        "alt": "帯のディテール"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "パステル着物のポートレート"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?auto=format&fit=crop&w=800&q=80",
+        "alt": "髪飾り"
+      }
+    ]
+  },
+  "banner": {
+    "kicker": "当日予約OK",
+    "title": "京都の着物予約をすぐに",
+    "subtitle": "多言語スタッフが即時にご案内。到着したらすぐ着付けスタート。",
+    "cta": "今すぐ予約"
+  },
+  "reasons": {
+    "title": "選ばれる理由",
+    "subtitle": "丁寧なスタイリングとスムーズな予約、観光地まで歩いてすぐの立地。",
+    "items": [
+      {
+        "title": "セレクトした衣装",
+        "description": "季節に合わせたパステル着物を毎日スチーム。帯・下駄・髪飾りもコーディネート。",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "スタイリストとカメラマン",
+        "description": "柔らかなヘアメイクと京都を熟知したフォトグラファーがベストスポットへご案内。",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "祇園・駅チカ",
+        "description": "八坂の塔や清水寺、各駅まで徒歩圏内。移動時間を短縮できます。",
+        "image": "https://images.unsplash.com/photo-1427308341325-2f0d2529b235?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
   },
   "services": {
     "title": "おすすめサービス",

@@ -29,6 +29,24 @@
     "primaryCta": "Book now",
     "secondaryCta": "View pricing",
     "badge": "Kyoto | Gion · Yasaka · Kiyomizu-dera",
+    "collage": [
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=900&q=80",
+        "alt": "Kimono portrait in Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80",
+        "alt": "Couple in pastel kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=900&q=80",
+        "alt": "Woman with paper umbrella"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+        "alt": "Quiet lane in Kyoto"
+      }
+    ],
     "highlights": [
       {
         "title": "Gion",
@@ -44,6 +62,73 @@
       }
     ],
     "imageAlt": "Pastel kimono moment in Kyoto"
+  },
+  "showcase": {
+    "kicker": "Kimono display",
+    "title": "New product display",
+    "subtitle": "Pastel kimono collections styled for Kyoto light—see the latest arrivals before you visit.",
+    "cta": "View full gallery",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1504624720567-64a41aa25d70?auto=format&fit=crop&w=800&q=80",
+        "alt": "Pastel kimono with obi"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono with umbrella"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Couple in kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono store interior"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "Street in Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Obi details"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "Pastel kimono portrait"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?auto=format&fit=crop&w=800&q=80",
+        "alt": "Hair accessories"
+      }
+    ]
+  },
+  "banner": {
+    "kicker": "Same-day appointments",
+    "title": "Reserve your Kyoto kimono in minutes",
+    "subtitle": "Multilingual team, quick confirmation, and curated sets ready when you arrive.",
+    "cta": "Reserve now"
+  },
+  "reasons": {
+    "title": "Why guests love An Nhien Kimono Kyoto",
+    "subtitle": "Thoughtful styling, easy booking, and locations close to every landmark.",
+    "items": [
+      {
+        "title": "Curated wardrobe",
+        "description": "Seasonal pastel kimonos, steamed daily with matching obi, geta, and hair accessories.",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Stylists & photo guides",
+        "description": "On-site makeup, delicate hair styling, and photographers who know Kyoto's best alleys.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Near Gion & stations",
+        "description": "Walk to Yasaka Pagoda, Kiyomizu-dera, and tram stations—no long transfers needed.",
+        "image": "https://images.unsplash.com/photo-1427308341325-2f0d2529b235?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
   },
   "services": {
     "title": "Signature services",
