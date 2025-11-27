@@ -3,3 +3,18 @@
 body {
   @apply bg-white text-slate-900 antialiased;
 }
+
+.animate-fade {
+  animation: fade 220ms ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

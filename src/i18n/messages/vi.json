@@ -23,6 +23,12 @@
       "ja": "JA"
     }
   },
+  "mobileNav": {
+    "home": "Trang chủ",
+    "plans": "Bảng giá",
+    "booking": "Đặt lịch",
+    "gallery": "Bộ sưu tập"
+  },
   "hero": {
     "title": "Thuê Kimono & Chụp Ảnh Tại Kyoto",
     "subtitle": "Trải nghiệm khoảnh khắc Kyoto tinh tế với kimono cao cấp, đội ngũ stylist tận tâm và nhiếp ảnh gia bản địa.",

@@ -7,7 +7,7 @@ import viMessages from "./messages/vi.json" assert { type: "json" };
 import enMessages from "./messages/en.json" assert { type: "json" };
 import jaMessages from "./messages/ja.json" assert { type: "json" };
 
-type Messages = typeof viMessages;
+export type Messages = typeof viMessages;
 
 const dictionary: Record<Locale, Messages> = {
   vi: viMessages,

@@ -23,6 +23,12 @@
       "ja": "JA"
     }
   },
+  "mobileNav": {
+    "home": "Home",
+    "plans": "Plans",
+    "booking": "Booking",
+    "gallery": "Gallery"
+  },
   "hero": {
     "title": "Kimono Rental & Photoshoot in Kyoto",
     "subtitle": "Immerse in Kyoto's serene charm with curated kimono sets, caring stylists, and photographers who know every hidden alley.",
