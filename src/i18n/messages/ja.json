@@ -7,6 +7,14 @@
     "openGraphDescription": "京都の穏やかな光で、パステルカラーの着物体験を。",
     "openGraphImage": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=80"
   },
+  "bookingSeo": {
+    "title": "京都で着物レンタルを予約 | An Nhien Kimono Kyoto",
+    "description": "着物一式、ヘアセット、メイク、ロケーション撮影の予約を京都で完了。An Nhienチームが丁寧にサポートします。",
+    "keywords": "着物 予約 京都, きもの ブッキング, 京都 撮影 予約",
+    "openGraphTitle": "京都着物予約",
+    "openGraphDescription": "京都での着物・メイク・撮影予約を数分で完了。",
+    "openGraphImage": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=80"
+  },
   "navbar": {
     "brand": "An Nhien Kimono Kyoto",
     "menu": {

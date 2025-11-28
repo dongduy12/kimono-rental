@@ -7,6 +7,14 @@
     "openGraphDescription": "Thuê kimono, làm tóc, make up và chụp ảnh ngoại cảnh tại Kyoto.",
     "openGraphImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
   },
+  "bookingSeo": {
+    "title": "Đặt lịch Kimono Kyoto | An Nhien Kimono Kyoto",
+    "description": "Điền thông tin để đặt lịch thuê kimono, làm tóc và chụp ảnh ngoại cảnh tại Kyoto với đội ngũ An Nhien.",
+    "keywords": "đặt lịch kimono kyoto, booking kimono, book photoshoot kyoto",
+    "openGraphTitle": "Đặt lịch Kimono Kyoto",
+    "openGraphDescription": "Hoàn tất đặt lịch kimono, make up và chụp ảnh tại Kyoto trong vài bước.",
+    "openGraphImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+  },
   "navbar": {
     "brand": "An Nhien Kimono Kyoto",
     "menu": {

@@ -53,7 +53,15 @@ function SectionHeading({ title, subtitle }: { title: string; subtitle?: string 
   );
 }
 
-function DesktopHeader({ messages, locale }: { messages: Messages; locale: Locale }) {
+function DesktopHeader({
+  messages,
+  locale,
+  bookingHref,
+}: {
+  messages: Messages;
+  locale: Locale;
+  bookingHref: string;
+}) {
   return (
     <header className="sticky top-0 z-30 backdrop-blur bg-white/80 shadow-sm">
       <nav className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
@@ -77,9 +85,14 @@ function DesktopHeader({ messages, locale }: { messages: Messages; locale: Local
           <a href="#faq" className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.faq}
           </a>
-          <a href="#booking" className="hover:text-sakura-700 transition-colors">
+          <Link
+            href={bookingHref}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-sakura-700 transition-colors"
+          >
             {messages.navbar.menu.booking}
-          </a>
+          </Link>
         </div>
         <div className="flex items-center gap-3 text-xs uppercase tracking-wide text-slate-700">
           {locales.map((code) => (
@@ -101,7 +114,7 @@ function DesktopHeader({ messages, locale }: { messages: Messages; locale: Local
   );
 }
 
-function HeroSection({ messages }: { messages: Messages }) {
+function HeroSection({ messages, bookingHref }: { messages: Messages; bookingHref: string }) {
   return (
     <section className="relative isolate overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 pt-12 md:pt-20 pb-14 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
@@ -115,12 +128,14 @@ function HeroSection({ messages }: { messages: Messages }) {
           </h1>
           <p className="text-lg text-slate-700 leading-relaxed max-w-2xl">{messages.hero.subtitle}</p>
           <div className="flex flex-wrap gap-4">
-            <a
-              href="#booking"
+            <Link
+              href={bookingHref}
+              target="_blank"
+              rel="noreferrer"
               className="px-6 py-3 rounded-full bg-gradient-to-r from-sakura-500 to-mizu-500 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
             >
               {messages.hero.primaryCta}
-            </a>
+            </Link>
             <a
               href="#pricing"
               className="px-6 py-3 rounded-full border border-sakura-200 text-sakura-700 bg-white/80 font-semibold hover:border-sakura-500 hover:text-sakura-800"
@@ -198,7 +213,7 @@ function ShowcaseSection({ messages }: { messages: Messages }) {
   );
 }
 
-function BannerSection({ messages }: { messages: Messages }) {
+function BannerSection({ messages, bookingHref }: { messages: Messages; bookingHref: string }) {
   return (
     <section className="py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-6">
@@ -208,13 +223,15 @@ function BannerSection({ messages }: { messages: Messages }) {
             <h3 className="text-2xl md:text-3xl font-display text-slate-900">{messages.banner.title}</h3>
             <p className="text-slate-700 max-w-2xl">{messages.banner.subtitle}</p>
           </div>
-          <a
-            href="#booking"
-            className="inline-flex items-center gap-2 rounded-full bg-sakura-500 px-6 py-3 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
-          >
-            {messages.banner.cta}
-          </a>
-        </div>
+            <Link
+              href={bookingHref}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-sakura-500 px-6 py-3 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
+            >
+              {messages.banner.cta}
+            </Link>
+          </div>
       </div>
     </section>
   );
@@ -267,7 +284,7 @@ function ServicesSection({ messages, id }: { messages: Messages; id?: string }) 
   );
 }
 
-function PricingSection({ messages, id }: { messages: Messages; id?: string }) {
+function PricingSection({ messages, id, bookingHref }: { messages: Messages; id?: string; bookingHref: string }) {
   return (
     <section id={id} className="py-16 md:py-20 bg-white/70">
       <div className="mx-auto max-w-6xl px-6 space-y-10">
@@ -290,12 +307,14 @@ function PricingSection({ messages, id }: { messages: Messages; id?: string }) {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#booking"
-                className="mt-auto inline-flex justify-center px-4 py-2 rounded-full border border-sakura-200 text-sakura-700 bg-white/80 font-semibold hover:border-sakura-500 hover:text-sakura-800"
-              >
-                {messages.hero.primaryCta}
-              </a>
+                <Link
+                  href={bookingHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-auto inline-flex justify-center px-4 py-2 rounded-full border border-sakura-200 text-sakura-700 bg-white/80 font-semibold hover:border-sakura-500 hover:text-sakura-800"
+                >
+                  {messages.hero.primaryCta}
+                </Link>
             </div>
           ))}
         </div>
@@ -380,7 +399,7 @@ function FaqSection({ messages, id }: { messages: Messages; id?: string }) {
   );
 }
 
-function BookingSection({ messages, id }: { messages: Messages; id?: string }) {
+export function BookingSection({ messages, id }: { messages: Messages; id?: string }) {
   return (
     <section id={id} className="py-16 md:py-20 bg-white/70">
       <div className="mx-auto max-w-5xl px-6">
@@ -512,20 +531,21 @@ function FooterSection({ messages }: { messages: Messages }) {
 
 export default function LocalePage({ params }: PageProps) {
   const locale = locales.includes(params.locale) ? params.locale : locales[0];
-  const messages = getMessages(locale);
+    const messages = getMessages(locale);
+    const bookingHref = `/${locale}/booking`;
 
-  const mobileViews = {
-    home: (
-      <div className="space-y-6">
-        <HeroSection messages={messages} />
-        <ShowcaseSection messages={messages} />
-        <BannerSection messages={messages} />
-      </div>
-    ),
+    const mobileViews = {
+      home: (
+        <div className="space-y-6">
+          <HeroSection messages={messages} bookingHref={bookingHref} />
+          <ShowcaseSection messages={messages} />
+          <BannerSection messages={messages} bookingHref={bookingHref} />
+        </div>
+      ),
     plans: (
       <div className="space-y-6">
-        <PricingSection messages={messages} />
-        <ReasonsSection messages={messages} />
+          <PricingSection messages={messages} bookingHref={bookingHref} />
+          <ReasonsSection messages={messages} />
       </div>
     ),
     booking: <BookingSection messages={messages} />,
@@ -552,13 +572,13 @@ export default function LocalePage({ params }: PageProps) {
           <div className="absolute -top-24 -left-20 h-72 w-72 bg-sakura-200/50 blur-3xl rounded-full" />
           <div className="absolute top-40 -right-10 h-80 w-80 bg-mizu-200/60 blur-3xl rounded-full" />
         </div>
-        <DesktopHeader messages={messages} locale={locale} />
-        <HeroSection messages={messages} />
+        <DesktopHeader messages={messages} locale={locale} bookingHref={bookingHref} />
+        <HeroSection messages={messages} bookingHref={bookingHref} />
         <ShowcaseSection messages={messages} />
-        <BannerSection messages={messages} />
+        <BannerSection messages={messages} bookingHref={bookingHref} />
         <ReasonsSection messages={messages} />
         <ServicesSection messages={messages} id="services" />
-        <PricingSection messages={messages} id="pricing" />
+        <PricingSection messages={messages} id="pricing" bookingHref={bookingHref} />
         <GallerySection messages={messages} id="gallery" />
         <ReviewsSection messages={messages} id="reviews" />
         <FaqSection messages={messages} id="faq" />
