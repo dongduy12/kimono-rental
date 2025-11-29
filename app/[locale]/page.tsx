@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) {
+export function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) {
   return (
     <div className="text-center space-y-2">
       <h2 className="text-3xl md:text-4xl font-display tracking-tight text-slate-900">{title}</h2>
@@ -57,10 +57,12 @@ function DesktopHeader({
   messages,
   locale,
   bookingHref,
+  galleryHref,
 }: {
   messages: Messages;
   locale: Locale;
   bookingHref: string;
+  galleryHref: string;
 }) {
   return (
     <header className="sticky top-0 z-30 backdrop-blur bg-white/80 shadow-sm">
@@ -76,21 +78,16 @@ function DesktopHeader({
           <a href="#pricing" className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.pricing}
           </a>
-          <a href="#gallery" className="hover:text-sakura-700 transition-colors">
+          <Link href={galleryHref} className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.gallery}
-          </a>
+          </Link>
           <a href="#reviews" className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.reviews}
           </a>
           <a href="#faq" className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.faq}
           </a>
-          <Link
-            href={bookingHref}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-sakura-700 transition-colors"
-          >
+          <Link href={bookingHref} className="hover:text-sakura-700 transition-colors">
             {messages.navbar.menu.booking}
           </Link>
         </div>
@@ -130,8 +127,6 @@ function HeroSection({ messages, bookingHref }: { messages: Messages; bookingHre
           <div className="flex flex-wrap gap-4">
             <Link
               href={bookingHref}
-              target="_blank"
-              rel="noreferrer"
               className="px-6 py-3 rounded-full bg-gradient-to-r from-sakura-500 to-mizu-500 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
             >
               {messages.hero.primaryCta}
@@ -176,7 +171,7 @@ function HeroSection({ messages, bookingHref }: { messages: Messages; bookingHre
   );
 }
 
-function ShowcaseSection({ messages }: { messages: Messages }) {
+function ShowcaseSection({ messages, galleryHref }: { messages: Messages; galleryHref: string }) {
   return (
     <section className="py-12 md:py-16 bg-white/80">
       <div className="mx-auto max-w-6xl px-6 space-y-6">
@@ -186,12 +181,12 @@ function ShowcaseSection({ messages }: { messages: Messages }) {
             <h2 className="text-3xl md:text-4xl font-display text-slate-900">{messages.showcase.title}</h2>
             <p className="text-slate-600 max-w-3xl">{messages.showcase.subtitle}</p>
           </div>
-          <a
-            href="#gallery"
+          <Link
+            href={galleryHref}
             className="inline-flex items-center gap-2 rounded-full border border-sakura-200 bg-white/70 px-4 py-2 text-sakura-700 font-semibold hover:border-sakura-500 hover:text-sakura-800"
           >
             {messages.showcase.cta}
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {messages.showcase.images.map((image, index) => (
@@ -225,8 +220,6 @@ function BannerSection({ messages, bookingHref }: { messages: Messages; bookingH
           </div>
             <Link
               href={bookingHref}
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-sakura-500 px-6 py-3 text-white font-semibold shadow-soft hover:shadow-lg transition-transform hover:-translate-y-0.5"
             >
               {messages.banner.cta}
@@ -309,8 +302,6 @@ function PricingSection({ messages, id, bookingHref }: { messages: Messages; id?
               </ul>
                 <Link
                   href={bookingHref}
-                  target="_blank"
-                  rel="noreferrer"
                   className="mt-auto inline-flex justify-center px-4 py-2 rounded-full border border-sakura-200 text-sakura-700 bg-white/80 font-semibold hover:border-sakura-500 hover:text-sakura-800"
                 >
                   {messages.hero.primaryCta}
@@ -323,7 +314,7 @@ function PricingSection({ messages, id, bookingHref }: { messages: Messages; id?
   );
 }
 
-function GallerySection({ messages, id }: { messages: Messages; id?: string }) {
+export function GallerySection({ messages, id }: { messages: Messages; id?: string }) {
   return (
     <section id={id} className="py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-6 space-y-10">
@@ -347,7 +338,7 @@ function GallerySection({ messages, id }: { messages: Messages; id?: string }) {
   );
 }
 
-function ReviewsSection({ messages, id }: { messages: Messages; id?: string }) {
+export function ReviewsSection({ messages, id }: { messages: Messages; id?: string }) {
   return (
     <section id={id} className="py-16 md:py-20 bg-white/70">
       <div className="mx-auto max-w-6xl px-6 space-y-10">
@@ -378,7 +369,7 @@ function ReviewsSection({ messages, id }: { messages: Messages; id?: string }) {
   );
 }
 
-function FaqSection({ messages, id }: { messages: Messages; id?: string }) {
+export function FaqSection({ messages, id }: { messages: Messages; id?: string }) {
   return (
     <section id={id} className="py-16 md:py-20">
       <div className="mx-auto max-w-5xl px-6 space-y-10">
@@ -531,14 +522,15 @@ function FooterSection({ messages }: { messages: Messages }) {
 
 export default function LocalePage({ params }: PageProps) {
   const locale = locales.includes(params.locale) ? params.locale : locales[0];
-    const messages = getMessages(locale);
-    const bookingHref = `/${locale}/booking`;
+  const messages = getMessages(locale);
+  const bookingHref = `/${locale}/booking`;
+  const galleryHref = `/${locale}/gallery`;
 
     const mobileViews = {
       home: (
         <div className="space-y-6">
           <HeroSection messages={messages} bookingHref={bookingHref} />
-          <ShowcaseSection messages={messages} />
+          <ShowcaseSection messages={messages} galleryHref={galleryHref} />
           <BannerSection messages={messages} bookingHref={bookingHref} />
         </div>
       ),
@@ -572,9 +564,14 @@ export default function LocalePage({ params }: PageProps) {
           <div className="absolute -top-24 -left-20 h-72 w-72 bg-sakura-200/50 blur-3xl rounded-full" />
           <div className="absolute top-40 -right-10 h-80 w-80 bg-mizu-200/60 blur-3xl rounded-full" />
         </div>
-        <DesktopHeader messages={messages} locale={locale} bookingHref={bookingHref} />
+        <DesktopHeader
+          messages={messages}
+          locale={locale}
+          bookingHref={bookingHref}
+          galleryHref={galleryHref}
+        />
         <HeroSection messages={messages} bookingHref={bookingHref} />
-        <ShowcaseSection messages={messages} />
+        <ShowcaseSection messages={messages} galleryHref={galleryHref} />
         <BannerSection messages={messages} bookingHref={bookingHref} />
         <ReasonsSection messages={messages} />
         <ServicesSection messages={messages} id="services" />

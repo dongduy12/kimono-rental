@@ -15,6 +15,14 @@
     "openGraphDescription": "Hoàn tất đặt lịch kimono, make up và chụp ảnh tại Kyoto trong vài bước.",
     "openGraphImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
   },
+  "gallerySeo": {
+    "title": "Bộ sưu tập Kimono Kyoto | An Nhien Kimono Kyoto",
+    "description": "Ngắm trọn bộ sưu tập kimono pastel, lookbook và các set phối sẵn để bạn chọn trước khi đến Kyoto.",
+    "keywords": "bộ sưu tập kimono, gallery kimono kyoto, lookbook kimono",
+    "openGraphTitle": "Gallery Kimono Kyoto",
+    "openGraphDescription": "Bộ sưu tập hình ảnh kimono, phối đồ và phong cách ánh sáng Kyoto.",
+    "openGraphImage": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+  },
   "navbar": {
     "brand": "An Nhien Kimono Kyoto",
     "menu": {

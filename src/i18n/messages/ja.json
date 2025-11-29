@@ -15,6 +15,14 @@
     "openGraphDescription": "京都での着物・メイク・撮影予約を数分で完了。",
     "openGraphImage": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=1200&q=80"
   },
+  "gallerySeo": {
+    "title": "京都着物ギャラリー | An Nhien Kimono Kyoto",
+    "description": "パステル着物のギャラリーやルックブック、コーデセットを来店前にチェック。",
+    "keywords": "着物 ギャラリー 京都, 着物 ルックブック, 京都 着物 コーデ",
+    "openGraphTitle": "京都着物ギャラリー",
+    "openGraphDescription": "着物スタイリングと京都の光を写したフォトコレクション。",
+    "openGraphImage": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+  },
   "navbar": {
     "brand": "An Nhien Kimono Kyoto",
     "menu": {
