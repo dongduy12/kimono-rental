@@ -15,6 +15,7 @@ interface MobileViewShellProps {
 
 export function MobileViewShell({ locale, messages, views }: MobileViewShellProps) {
   const [activeView, setActiveView] = useState<MobileViewKey>("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = useMemo(
     () => [
@@ -29,27 +30,102 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
   return (
     <div className="lg:hidden">
       <header className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between relative">
           <div className="flex items-center gap-2">
             <div className="h-9 w-9 rounded-full bg-gradient-to-br from-sakura-200 to-mizu-200 shadow-soft" aria-hidden />
             <span className="text-sm font-semibold text-slate-900">
               {messages.navbar.brand}
             </span>
           </div>
-          <div className="flex items-center gap-2 text-[11px] uppercase tracking-wide text-slate-700">
-            {locales.map((code) => (
-              <Link
-                key={code}
-                href={`/${code}`}
-                className={`px-2.5 py-1 rounded-full border transition-colors ${
-                  code === locale
-                    ? "border-sakura-500 bg-sakura-100 text-sakura-700"
-                    : "border-slate-200 hover:border-sakura-400"
-                }`}
-              >
-                {messages.navbar.languages[code]}
-              </Link>
-            ))}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 text-[11px] uppercase tracking-wide text-slate-700">
+              {locales.map((code) => (
+                <Link
+                  key={code}
+                  href={`/${code}`}
+                  className={`px-2.5 py-1 rounded-full border transition-colors ${
+                    code === locale
+                      ? "border-sakura-500 bg-sakura-100 text-sakura-700"
+                      : "border-slate-200 hover:border-sakura-400"
+                  }`}
+                >
+                  {messages.navbar.languages[code]}
+                </Link>
+              ))}
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+              className="h-10 w-10 grid place-items-center rounded-full border border-slate-200 bg-white shadow-soft text-slate-700"
+              aria-label="Toggle navigation menu"
+              aria-expanded={isMenuOpen}
+            >
+              <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
+                <path
+                  d="M4 7h16M4 12h16M4 17h16"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </button>
+            <div
+              className={`absolute right-4 top-14 w-52 rounded-2xl border border-slate-100 bg-white shadow-soft transition-all duration-200 origin-top-right ${
+                isMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+              }`}
+              role="menu"
+            >
+              <div className="py-2 text-sm text-slate-700">
+                <a
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href="#services"
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.services}
+                </a>
+                <a
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href="#pricing"
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.pricing}
+                </a>
+                <Link
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href={`/${locale}/gallery`}
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.gallery}
+                </Link>
+                <a
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href="#reviews"
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.reviews}
+                </a>
+                <a
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href="#faq"
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.faq}
+                </a>
+                <Link
+                  className="block px-4 py-2 hover:bg-sakura-50"
+                  href={`/${locale}/booking`}
+                  role="menuitem"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {messages.navbar.menu.booking}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </header>
