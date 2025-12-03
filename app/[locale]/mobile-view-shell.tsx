@@ -17,6 +17,11 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
   const [activeView, setActiveView] = useState<MobileViewKey>("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const stackedViews = useMemo(
+    () => [views.home, views.plans, views.gallery, views.booking],
+    [views],
+  );
+
   const navItems = useMemo(
     () => [
       { key: "home" as const, label: messages.mobileNav.home },
@@ -132,35 +137,47 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
 
       <div className="pb-24 pt-2 bg-gradient-to-b from-sakura-50 via-white to-mizu-50 min-h-screen">
         <div className="mx-auto max-w-xl px-4 space-y-8">
-          <div className="rounded-3xl border border-slate-100 bg-white/80 shadow-soft p-3">
-            <div className="grid grid-cols-4 gap-2 text-xs text-slate-600">
-              {navItems.map((item) => (
-                <button
-                  key={item.key}
-                  type="button"
-                  onClick={() => setActiveView(item.key)}
-                  className={`rounded-2xl px-3 py-2 font-semibold transition-colors ${
-                    activeView === item.key
-                      ? "bg-gradient-to-r from-sakura-500 to-mizu-500 text-white shadow-soft"
-                      : "bg-white border border-slate-100"
-                  }`}
-                  aria-pressed={activeView === item.key}
-                >
-                  {item.label}
-                </button>
+          <div className="md:hidden rounded-3xl border border-slate-100 bg-white/80 shadow-soft overflow-hidden">
+            <div className="px-3 py-4 space-y-6">
+              {stackedViews.map((view, index) => (
+                <div key={index} className="space-y-6">
+                  {view}
+                </div>
               ))}
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-100 bg-white/85 shadow-soft overflow-hidden">
-            <div key={activeView} className="animate-fade px-3 py-4 space-y-6">
-              {views[activeView]}
+          <div className="hidden md:block space-y-4">
+            <div className="rounded-3xl border border-slate-100 bg-white/80 shadow-soft p-3">
+              <div className="grid grid-cols-4 gap-2 text-xs text-slate-600">
+                {navItems.map((item) => (
+                  <button
+                    key={item.key}
+                    type="button"
+                    onClick={() => setActiveView(item.key)}
+                    className={`rounded-2xl px-3 py-2 font-semibold transition-colors ${
+                      activeView === item.key
+                        ? "bg-gradient-to-r from-sakura-500 to-mizu-500 text-white shadow-soft"
+                        : "bg-white border border-slate-100"
+                    }`}
+                    aria-pressed={activeView === item.key}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-slate-100 bg-white/85 shadow-soft overflow-hidden">
+              <div key={activeView} className="animate-fade px-3 py-4 space-y-6">
+                {views[activeView]}
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 backdrop-blur">
+      <nav className="hidden md:block fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto max-w-xl grid grid-cols-4 text-center text-xs font-semibold text-slate-700">
           {navItems.map((item) => (
             <button
