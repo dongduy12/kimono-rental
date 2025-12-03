@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MobileViewShell } from "./mobile-view-shell";
+import { LocaleSwitcher } from "./locale-switcher";
 import { getMessages, locales, type Locale, type Messages } from "@/src/i18n/config";
 
 interface PageProps {
@@ -91,21 +92,7 @@ function DesktopHeader({
             {messages.navbar.menu.booking}
           </Link>
         </div>
-        <div className="flex items-center gap-3 text-xs uppercase tracking-wide text-slate-700">
-          {locales.map((code) => (
-            <Link
-              key={code}
-              href={`/${code}`}
-              className={`px-3 py-1 rounded-full border transition-colors ${
-                code === locale
-                  ? "border-sakura-500 bg-sakura-100 text-sakura-700"
-                  : "border-slate-200 hover:border-sakura-400"
-              }`}
-            >
-              {messages.navbar.languages[code]}
-            </Link>
-          ))}
-        </div>
+        <LocaleSwitcher locale={locale} labels={messages.navbar.languages} />
       </nav>
     </header>
   );

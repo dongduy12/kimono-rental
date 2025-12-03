@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { BookingSection } from "../page";
+import { LocaleSwitcher } from "../locale-switcher";
 import { getMessages, locales, type Locale } from "@/src/i18n/config";
 
 interface PageProps {
@@ -58,7 +59,7 @@ export default function BookingPage({ params }: PageProps) {
       </div>
 
       <div className="relative mx-auto max-w-5xl px-6 py-10 space-y-6">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-3">
             <div className="h-11 w-11 rounded-full bg-gradient-to-br from-sakura-200 to-mizu-200 shadow-soft" aria-hidden />
             <div>
@@ -66,12 +67,15 @@ export default function BookingPage({ params }: PageProps) {
               <p className="text-sm text-slate-600">{messages.booking.subtitle}</p>
             </div>
           </div>
-          <Link
-            href={homeHref}
-            className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-sakura-700 hover:border-sakura-400"
-          >
-            ← {messages.hero.secondaryCta}
-          </Link>
+          <div className="flex items-center gap-3">
+            <LocaleSwitcher locale={locale} labels={messages.navbar.languages} />
+            <Link
+              href={homeHref}
+              className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-sakura-700 hover:border-sakura-400"
+            >
+              ← {messages.hero.secondaryCta}
+            </Link>
+          </div>
         </div>
 
         <div className="rounded-3xl border border-slate-100 bg-white/85 shadow-soft p-6">

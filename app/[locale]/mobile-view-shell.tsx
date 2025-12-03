@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale, Messages } from "@/src/i18n/config";
-import { locales } from "@/src/i18n/config";
+import { LocaleSwitcher } from "./locale-switcher";
 
 type MobileViewKey = "home" | "plans" | "booking" | "gallery";
 
@@ -32,6 +33,8 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
     [messages.mobileNav],
   );
 
+  const collageImages = messages.hero.collage.slice(0, 6);
+
   return (
     <div className="lg:hidden">
       <header className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
@@ -43,21 +46,12 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 text-[11px] uppercase tracking-wide text-slate-700">
-              {locales.map((code) => (
-                <Link
-                  key={code}
-                  href={`/${code}`}
-                  className={`px-2.5 py-1 rounded-full border transition-colors ${
-                    code === locale
-                      ? "border-sakura-500 bg-sakura-100 text-sakura-700"
-                      : "border-slate-200 hover:border-sakura-400"
-                  }`}
-                >
-                  {messages.navbar.languages[code]}
-                </Link>
-              ))}
-            </div>
+            <LocaleSwitcher
+              locale={locale}
+              labels={messages.navbar.languages}
+              pillClassName="px-2.5 py-1 text-[11px]"
+              className="text-[11px]"
+            />
             <button
               type="button"
               onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -135,8 +129,57 @@ export function MobileViewShell({ locale, messages, views }: MobileViewShellProp
         </div>
       </header>
 
-      <div className="pb-24 pt-2 bg-gradient-to-b from-sakura-50 via-white to-mizu-50 min-h-screen">
+      <div className="pb-20 pt-3 bg-gradient-to-b from-sakura-50 via-white to-mizu-50 min-h-screen">
         <div className="mx-auto max-w-xl px-4 space-y-8">
+          <div className="rounded-3xl border border-slate-100 bg-white shadow-soft overflow-hidden">
+            <div className="grid grid-cols-2 gap-1 bg-white">
+              {collageImages.map((image, index) => (
+                <div key={`${image.src}-${index}`} className="relative aspect-[4/5]">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="50vw"
+                    priority={index < 3}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="px-4 py-6 text-center space-y-3">
+              <p className="text-sm font-semibold uppercase tracking-wide text-sakura-700">
+                {messages.showcase.kicker}
+              </p>
+              <div className="space-y-2">
+                <p className="text-base font-medium text-slate-600">{messages.showcase.subtitle}</p>
+                <h1 className="text-3xl font-display tracking-tight text-slate-900">
+                  {messages.showcase.title}
+                </h1>
+              </div>
+              <div className="flex flex-wrap justify-center gap-3 pt-2">
+                <a
+                  href="#pricing"
+                  className="flex-1 min-w-[140px] rounded-full border border-sakura-200 bg-white px-4 py-3 text-sm font-semibold text-sakura-700 shadow-soft"
+                >
+                  {messages.hero.secondaryCta}
+                </a>
+                <Link
+                  href={`/${locale}/booking`}
+                  className="flex-1 min-w-[140px] rounded-full bg-gradient-to-r from-sakura-500 to-mizu-500 px-4 py-3 text-sm font-semibold text-white shadow-soft"
+                >
+                  {messages.hero.primaryCta}
+                </Link>
+              </div>
+              <div className="flex justify-center pt-1">
+                <LocaleSwitcher
+                  locale={locale}
+                  labels={messages.navbar.languages}
+                  pillClassName="px-3 py-2 text-xs"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="md:hidden rounded-3xl border border-slate-100 bg-white/80 shadow-soft overflow-hidden">
             <div className="px-3 py-4 space-y-6">
               {stackedViews.map((view, index) => (

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { FaqSection, GallerySection, ReviewsSection } from "../page";
+import { LocaleSwitcher } from "../locale-switcher";
 import { getMessages, locales, type Locale } from "@/src/i18n/config";
 
 interface PageProps {
@@ -59,7 +60,7 @@ export default function GalleryPage({ params }: PageProps) {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 py-10 space-y-8">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-3">
             <div className="h-11 w-11 rounded-full bg-gradient-to-br from-sakura-200 to-mizu-200 shadow-soft" aria-hidden />
             <div>
@@ -68,6 +69,7 @@ export default function GalleryPage({ params }: PageProps) {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <LocaleSwitcher locale={locale} labels={messages.navbar.languages} />
             <Link
               href={homeHref}
               className="rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-semibold text-sakura-700 hover:border-sakura-400"
