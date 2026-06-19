@@ -1,0 +1,299 @@
+{
+  "seo": {
+    "title": "Kimono Rental & Photoshoot in Kyoto | An Nhien Kimono Kyoto",
+    "description": "Elegant kimono rental with hair styling, makeup, and outdoor photography around Gion, Yasaka, and Kiyomizu-dera.",
+    "keywords": "kimono rental kyoto, gion photoshoot, kyoto photography",
+    "openGraphTitle": "An Nhien Kimono Kyoto",
+    "openGraphDescription": "Experience Kyoto in pastel kimono with local stylists and photographers.",
+    "openGraphImage": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+  },
+  "bookingSeo": {
+    "title": "Book Kimono Rental in Kyoto | An Nhien Kimono Kyoto",
+    "description": "Reserve your kimono set, hair & makeup, and outdoor photoshoot slots with An Nhien in Kyoto.",
+    "keywords": "book kimono kyoto, kimono booking, kyoto photoshoot booking",
+    "openGraphTitle": "Kyoto Kimono Booking",
+    "openGraphDescription": "Complete your kimono, makeup, and photography booking in minutes.",
+    "openGraphImage": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+  },
+  "gallerySeo": {
+    "title": "Kimono Gallery Kyoto | An Nhien Kimono Kyoto",
+    "description": "Browse the pastel kimono gallery, lookbooks, and curated sets before your Kyoto visit.",
+    "keywords": "kimono gallery, kyoto kimono lookbook, kimono outfits",
+    "openGraphTitle": "Kyoto Kimono Gallery",
+    "openGraphDescription": "See the full collection of kimono imagery, styling, and Kyoto light moods.",
+    "openGraphImage": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+  },
+  "navbar": {
+    "brand": "An Nhien Kimono Kyoto",
+    "menu": {
+      "services": "Services",
+      "pricing": "Pricing",
+      "gallery": "Gallery",
+      "reviews": "Reviews",
+      "faq": "FAQ",
+      "booking": "Booking"
+    },
+    "languages": {
+      "vi": "VI",
+      "en": "EN",
+      "ja": "JA"
+    }
+  },
+  "mobileNav": {
+    "home": "Home",
+    "plans": "Plans",
+    "booking": "Booking",
+    "gallery": "Gallery"
+  },
+  "hero": {
+    "title": "Kimono Rental & Photoshoot in Kyoto",
+    "subtitle": "Immerse in Kyoto's serene charm with curated kimono sets, caring stylists, and photographers who know every hidden alley.",
+    "primaryCta": "Book now",
+    "secondaryCta": "View pricing",
+    "badge": "Kyoto | Gion · Yasaka · Kiyomizu-dera",
+    "collage": [
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=900&q=80",
+        "alt": "Kimono portrait in Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80",
+        "alt": "Couple in pastel kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=900&q=80",
+        "alt": "Woman with paper umbrella"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+        "alt": "Quiet lane in Kyoto"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Gion",
+        "description": "Hidden alleys"
+      },
+      {
+        "title": "Yasaka",
+        "description": "Pagoda light"
+      },
+      {
+        "title": "Kiyomizu",
+        "description": "Hill breeze"
+      }
+    ],
+    "imageAlt": "Pastel kimono moment in Kyoto"
+  },
+  "showcase": {
+    "kicker": "Kimono display",
+    "title": "New product display",
+    "subtitle": "Pastel kimono collections styled for Kyoto light—see the latest arrivals before you visit.",
+    "cta": "View full gallery",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1504624720567-64a41aa25d70?auto=format&fit=crop&w=800&q=80",
+        "alt": "Pastel kimono with obi"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504788363733-507549153474?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono with umbrella"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Couple in kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono store interior"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "Street in Kyoto"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Obi details"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "Pastel kimono portrait"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?auto=format&fit=crop&w=800&q=80",
+        "alt": "Hair accessories"
+      }
+    ]
+  },
+  "banner": {
+    "kicker": "Same-day appointments",
+    "title": "Reserve your Kyoto kimono in minutes",
+    "subtitle": "Multilingual team, quick confirmation, and curated sets ready when you arrive.",
+    "cta": "Reserve now"
+  },
+  "reasons": {
+    "title": "Why guests love An Nhien Kimono Kyoto",
+    "subtitle": "Thoughtful styling, easy booking, and locations close to every landmark.",
+    "items": [
+      {
+        "title": "Curated wardrobe",
+        "description": "Seasonal pastel kimonos, steamed daily with matching obi, geta, and hair accessories.",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Stylists & photo guides",
+        "description": "On-site makeup, delicate hair styling, and photographers who know Kyoto's best alleys.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Near Gion & stations",
+        "description": "Walk to Yasaka Pagoda, Kiyomizu-dera, and tram stations—no long transfers needed.",
+        "image": "https://images.unsplash.com/photo-1427308341325-2f0d2529b235?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "services": {
+    "title": "Signature services",
+    "items": [
+      {
+        "name": "Kimono rental",
+        "description": "80+ refined kimono, obi, and accessories, steamed daily and fitted to your silhouette."
+      },
+      {
+        "name": "Hair & makeup",
+        "description": "Soft, natural styling inspired by Kyoto palettes, tailored by professional artists."
+      },
+      {
+        "name": "Outdoor photography",
+        "description": "Guided photo walks in Gion, Yasaka, and Kiyomizu-dera with a local photographer."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "note": "Flexible booking. Free reschedule up to 24 hours in advance.",
+    "cards": [
+      {
+        "name": "Basic Package",
+        "price": "$69",
+        "features": [
+          "1 kimono set with accessories",
+          "On-site dressing support",
+          "4-hour rental duration"
+        ]
+      },
+      {
+        "name": "Couple Package",
+        "price": "$129",
+        "features": [
+          "Coordinated kimono for two",
+          "Palette consultation",
+          "Hair pins and hand fan"
+        ]
+      },
+      {
+        "name": "Photoshoot (outdoor)",
+        "price": "$199",
+        "features": [
+          "Kimono + stylist",
+          "1-hour shoot in Gion/Yasaka",
+          "30 edited photos delivered fast"
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Pastel moments with Kyoto's calm light.",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono portrait at a Kyoto street"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+        "alt": "Kimono with pastel umbrella"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+        "alt": "Couple wearing kimono"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+        "alt": "Walking near Yasaka shrine"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Reviews",
+    "items": [
+      {
+        "name": "Hannah",
+        "role": "Sydney",
+        "content": "The fabrics were beautiful and lightweight. The team made us feel calm and elegant throughout the shoot."
+      },
+      {
+        "name": "Kaito",
+        "role": "Tokyo",
+        "content": "スタッフが優しく、撮影スポットの提案が的確。友人にも勧めたいです。"
+      },
+      {
+        "name": "Amelia",
+        "role": "London",
+        "content": "Loved the pastel styling and the soft makeup. Photos were delivered the same evening!"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How long does dressing and hair take?",
+        "answer": "Plan for 30–40 minutes to dress and 20 minutes for light hair/makeup."
+      },
+      {
+        "question": "Do you store personal items?",
+        "answer": "Yes, personal lockers are available during your rental."
+      },
+      {
+        "question": "What if it rains?",
+        "answer": "You can reschedule for free up to 24 hours before, subject to availability."
+      },
+      {
+        "question": "Are plus sizes available?",
+        "answer": "We carry sizes up to 185cm height and plus-size fittings. Leave a note when booking."
+      },
+      {
+        "question": "Can I extend the rental after the shoot?",
+        "answer": "Yes, extension options are available with a small fee. Please ask our staff."
+      },
+      {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept major credit cards, cash, and popular Japanese e-wallets."
+      }
+    ]
+  },
+  "booking": {
+    "title": "Booking",
+    "subtitle": "Flexible timeslots with multilingual support.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "date": "Date",
+      "people": "Number of people",
+      "package": "Package",
+      "note": "Notes",
+      "submit": "Send request"
+    }
+  },
+  "footer": {
+    "address": "165 Shijo-dori, Higashiyama-ku, Kyoto",
+    "hours": "Open daily: 08:00 - 19:00",
+    "contact": "Hotline: +81 90 1234 5678",
+    "social": "Connect",
+    "socialLinks": [
+      "Instagram",
+      "Facebook"
+    ]
+  }
+}
